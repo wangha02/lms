@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tạo Navigation Trong Suốt</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    section.section1{
+      width: 100%;
+      height: 100vh;
+      box-sizing: border-box;
+      background: url(https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?cs=srgb&dl=pexels-mike-b-170811.jpg&fm=jpg);
+      background-size: cover;
+    }
+/* THANH TASK BAR */
+    nav{
+      /*khung ảnh*/
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background:ghostwhite;
+    }
+/*căn lề chữ lên trên TASK BAR*/
+    nav .brand{
+      float: left;
+      height: 100%;
+      line-height: 80px;
+    }
+/*logo*/
+    nav .brand h2{
+      margin: 0;
+      padding: 0;
+      color: rgba(13, 146, 255, 0.4);
+    }
+/*CĂN LỀ CHỮ TASK BAR*/
+    nav ul{
+      float: left;
+      display: flex;
+      margin:0;
+      padding: 0;
+    }
+
+    nav ul li{
+      list-style: none;
+    }
+/* CĂN LỀ RA GIỮA BÊN PHẢI */
+    nav ul li a{
+      position: relative;
+      display: block;
+      height: 80px;
+      line-height: 80px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      color: #ff0000;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.5s
+    }
+
+ /*HIỆU ỨNG NỔI KHỐI MỜ*/
+    nav ul li a:hover:before{
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+/* MÀU CHỮ */
+    nav ul li a:hover{
+      color: #ffd200;
+    }
+
+    nav.avt{
+
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="brand">
+    <img src="img/Logo-Rikkei.png" width="300px" height="70px">
+  </div>
+
+  <ul>
+    <p><li><b><a href="https://learn.rikkeiacademy.com"><i class="bi bi-house-fill" aria-hidden="true" ></i> Trang Chủ</a></b></li></p>
+    <li><a href="https://learn.rikkeiacademy.com/roadmap-list"><i class="bi bi-archive-fill" aria-hidden="true"></i> Lộ Trình</a></li>
+    <li><a href="https://learn.rikkeiacademy.com/course-list"><i class="bi bi-book-fill" aria-hidden="true" ></i> Khóa Học</a></li>
+    <li><a href="https://learn.rikkeiacademy.com/dashboard"><i class="fa fa-telegram" aria-hidden="true"></i> Bảng Điều Khiển</a></li>
+  </ul>
+</nav>
+<section class="section1"></section>
+
+<!--<nav >-->
+<!--  <div class="avt">-->
+<!--&lt;!&ndash;    <img src="img/anhdep.jpg" width="30" height="30">&ndash;&gt;-->
+<!--  </div>-->
+<!--</nav>-->
+
+</body>
+</html>
